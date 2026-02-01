@@ -50,7 +50,7 @@ We've built a `setup.bat` script that handles the heavy lifting.
 > ⚠️ **Important:** Replace `YOUR_USERNAME` with the repository owner’s GitHub username.  
 > Example (this project):
 > ```powershell
-> git clone https://github.com/Surajkumar5050/pikachu-assistant.git
+> git clone https://github.com/YOUR_USERNAME/pikachu-assistant.git
 > ```
 
 **Option B - Manual Download:**
