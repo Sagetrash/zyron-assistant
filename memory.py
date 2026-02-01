@@ -3,7 +3,7 @@ import os
 
 MEMORY_FILE = "long_term_memory.json"
 
-# --- SHORT TERM MEMORY (RAM) ---
+
 short_term = {
     "last_app_opened": None,
     "last_browser_used": "default",
@@ -11,7 +11,6 @@ short_term = {
     "last_action_type": None
 }
 
-# --- LONG TERM MEMORY (Hard Disk) ---
 def load_long_term():
     if os.path.exists(MEMORY_FILE):
         try:
@@ -39,7 +38,7 @@ def update_context(action_type, target=None):
 
 def get_context_string():
     """Returns a summary of BOTH Short-Term and Long-Term memory."""
-    long_term_data = load_long_term() # Load your name/prefs
+    long_term_data = load_long_term() 
     
     return f"""
     [CURRENT CONTEXT STATE]
